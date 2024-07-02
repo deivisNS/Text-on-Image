@@ -106,7 +106,7 @@ add = Text_on_Image(
 	"images/4.jpg",	#imagen a editar
 	"HOLA MUNDO :).",	#texto que se agregara
 	35,	#tamaño de letra
-	save = "images/saves"	#donde se guardara, y si no se indica entonces el resultado solo se mostrara
+	save = "images/saves"	#donde se guardara, y si no se indica entonces el resultado solo se mostrara, si la carpeta no esta entonces creala
 	)
 
 print(add.into_image(
