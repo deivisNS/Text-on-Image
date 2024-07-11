@@ -1,4 +1,5 @@
 from PIL import Image, ImageEnhance, ImageDraw, ImageFont
+import os
 
 
 
@@ -17,6 +18,10 @@ class Text_on_Image():
 		self.font_size = font_size
 
 		self.font = ImageFont.truetype("ALGER.TTF", font_size)	#elegimos el tipo de letra y tamaño que se va a ingresar en la imagen
+
+		if os.path.exists("./images/saves") == False:
+
+			os.mkdir("./images/saves")
 
 
 	def into_image(self, potition, text_color, up = 1.3):
